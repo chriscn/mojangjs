@@ -1,0 +1,24 @@
+{
+  "name": "mcuuid",
+  "version": "1.0.0",
+  "description": "A simple package to get the UUID of a username",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/chriscn/mcuuid.git"
+  },
+  "keywords": [
+    "minecraft",
+    "uuid",
+    "conversion"
+  ],
+  "author": "Christopher Nethercott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chriscn/mcuuid/issues"
+  },
+  "homepage": "https://github.com/chriscn/mcuuid#readme"
+}
