@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/chriscn/mcuuid/issues"
   },
-  "homepage": "https://github.com/chriscn/mcuuid#readme"
+  "homepage": "https://github.com/chriscn/mcuuid#readme",
+  "devDependencies": {
+    "eslint": "^5.7.0"
+  }
 }
