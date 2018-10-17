@@ -1,1 +1,1 @@
-module.exports = require('./lib/mcuuid.js');
+module.exports = require('./lib/api.js');
