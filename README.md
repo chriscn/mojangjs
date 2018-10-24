@@ -1,13 +1,12 @@
-# mcuuid
+# mojangjs
 A lightweight, simple way to get UUIDs of usernames.
 ## Usage
 Of course after running `npm install mojangjs` the methods are simple;
 ```js
   const mojangjs = require('mojangjs');
   
-  mojangjs.getUUID('Thorin', (err, res) => {
+  mojangjs.getUUID('Thorin', (err, uuid) => {
   	if (err) console.error(err);
-  	console.log(res.id); // Prints the UUID
-  	console.log(res.name); // Prints the name provided.
+  	console.log(uuid); // prints the UUID
   });
 ```
