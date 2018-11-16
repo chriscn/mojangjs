@@ -1,40 +1,36 @@
 # mojangjs
 A lightweight, simple way to get UUIDs of usernames.
 ## Usage
-Of course after running `npm install mojangjs` the methods are simple;
+Of course after running `npm install mojangjs` the methods are simple.  
+All methods use Promise style callbacks as they are preferred.
 ## Methods
-#### `getUUID(uuid, callback)` - Gets the UUID of the player.
+#### `getUUID(uuid)` - Gets the UUID of the player.
 ```js  
-mojangjs.getUUID('Thorin', (err, uuid) => {
-	if (err) console.error(err);
-	console.log(uuid);
-});
+mojangjs.getUUID('Thorin').then(uuid => {
+    console.log(uuid);
+}).catch(err => console.error(err));
 ```
-#### `nameHistory.byName(playername, callback)` - Gets the name history of a player.
+#### `nameHistory.byName(playername)` - Gets the name history of a player.
 ```js
-mojangjs.nameHistory.byName('Thorin', (err, namehistory) => {
-	if (err) console.error(err);
-	console.log(namehistory);
-});
+mojangjs.nameHistory.byName('Thorin').then(nameHistory => {
+	console.log(nameHistory);
+}).catch(err => console.error(err));
 ```
-#### `nameHistory.byUUID(uuid, callback)` - Gets the name history of a UUID.
+#### `nameHistory.byUUID(uuid)` - Gets the name history of a UUID.
 ```js
-mojangjs.nameHistory.byUUID('5de3d1d51a954fb3a2b788e4938ae11c', (err, namehistory) => {
-	if (err) console.error(err);
-	console.log(namehistory);
-});
+mojangjs.nameHistory.byUUID('5de3d1d51a954fb3a2b788e4938ae11c').then(nameHistory => {
+	console.log(nameHistory);
+}).catch(err => console.error(err));
 ```
-#### `statusCheck(callback)` - Gets the current status from Mojang.
+#### `statusCheck()` - Gets the current status from Mojang.
 ```js
-mojangjs.statusCheck((err, status) => {
-	if (err) console.error(err);
+mojangjs.statusCheck().then(status => {
 	console.log(status);
-});
+}).catch(err => console.error(err));
 ```
-#### `getNameFromUUID(uuid, callback)` - Gets the current playername from a UUID.
+#### `getNameFromUUID(uuid)` - Gets the current playername from a UUID.
 ```js
-mojangjs.getNameFromUUID('5de3d1d51a954fb3a2b788e4938ae11c', (err, playername) => {
-	if (err) console.error(err);
-	console.log(playername);
-});
+mojangjs.getNameFromUUID(uuid).then(name => {
+	console.log(name);
+}).catch(err => console.error(err));
 ```
